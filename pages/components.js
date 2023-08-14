@@ -47,7 +47,15 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              
+              <img
+                src="https://media.licdn.com/dms/image/D4D03AQG5NznYSFUknw/profile-displayphoto-shrink_200_200/0/1692024640280?e=1697673600&v=beta&t=yCnomghWHEbSYqvvQ13RaYe_JuiIj11SHxnJ3W_I0FM"
+                alt="..."
+                style={{height:"200px", width:"200px", borderRadius:"20px"}}
+              />
+              <br/>
+              <h1 className={classes.title}>Diego Ciara</h1><br/>
+              <i>Front-end developer</i>
               <h4>
                 Every landing page needs a small description after the big bold
                 title, that{"'"}s why we added this text here. Add here all the
@@ -55,15 +63,26 @@ export default function LandingPage(props) {
                 impression
               </h4>
               <br />
+              
               <Button
-                color="danger"
+                color="success"
+                size="lg"
+                style={{marginRight:"20px"}}
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fas fa-whatsapp" />
+                Entre em contato
+              </Button>
+              <Button
                 size="lg"
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fas fa-play" />
-                Watch video
+                <i className="fas fa-whatsapp" />
+                Ver projetos
               </Button>
             </GridItem>
           </GridContainer>
