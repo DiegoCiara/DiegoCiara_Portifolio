@@ -30,27 +30,42 @@ export default function HeaderLinks(props) {
         <CustomDropdown
           noLiPadding
           navDropdown
-          buttonText="Components"
+          buttonText="Projetos"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link href="/components">
-              <a className={classes.dropdownLink}>All components</a>
+            <Link href="/projects">
+              <a className={classes.dropdownLink}>Todos os projetos</a>
             </Link>,
-            <a
-              href="https://creativetimofficial.github.io/nextjs-material-kit/#/documentation?ref=njsmk-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
+            <Link href="/sites">
+              <a className={classes.dropdownLink}>Sites</a>
+            </Link>,
+            <Link href="/projects">
+              <a className={classes.dropdownLink}>Landing Pages</a>
+            </Link>,
+            <Link href="/projects">
+              <a className={classes.dropdownLink}>SaaS (Software as a Service)</a>
+            </Link>,
+            <Link href="/projects">
+              <a className={classes.dropdownLink}>Ferramentas</a>
+            </Link>,
+            // <Link href="/projects">
+            //   <a className={classes.dropdownLink}>IA <span style={{margin:"8px", fontSize:"10px", color:"#0048fc", fontWeight:700}}>Em breve</span></a>
+            // </Link>,
+          //   <a
+          //   href="/Sites"
+          //   target="_blank"
+          //   className={classes.dropdownLink}
+          // >
+          //   Sites
+          // </a>
           ]}
         />
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <Button
           href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmk-navbar"
           color="transparent"
@@ -59,15 +74,15 @@ export default function HeaderLinks(props) {
         >
           <Icon className={classes.icons}>unarchive</Icon> Upgrade to PRO
         </Button>
-      </ListItem>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-navbar"
+          href="/contact"
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+          <i className="fab fa-mailer" style={{marginRight:"7px"}} /> Entre em contato
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -78,7 +93,7 @@ export default function HeaderLinks(props) {
         </Tooltip>*/}
         <Tooltip
           id="instagram-twitter"
-          title="Follow us on twitter"
+          title="Veja meu Github"
           placement={"top"}
           classes={{ tooltip: classes.tooltip }}
         >
@@ -112,7 +127,24 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
-          title="Follow us on instagram"
+          title="Conecte-se comigo no Linkedin"
+          placement={"top"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href="https://www.linkedin.com/in/diego-antonio-055602249/"
+            target="_blank"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-linkedin"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="instagram-tooltip"
+          title="Me siga no instagram"
           placement={"top"}
           classes={{ tooltip: classes.tooltip }}
         >
