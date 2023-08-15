@@ -28,7 +28,7 @@ const workStyle = {
     marginRight: "15px",
     marginLeft: "15px"
   },  
-  mainRaised: {
+  mainRaised: { 
     margin: "-60px 30px 0px",
     borderRadius: "6px",
     boxShadow:

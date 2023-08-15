@@ -37,7 +37,7 @@ export default function ContactPage(props) {
         routes={dashboardRoutes}
         brand="Diego Ciara"
         rightLinks={<HeaderLinks />}
-        fixed
+        fixed 
         title="Entre em contato"
         changeColorOnScroll={{
           height: 400,

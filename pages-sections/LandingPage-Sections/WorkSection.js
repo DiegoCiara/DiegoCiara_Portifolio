@@ -8,7 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import CustomInput from "/components/CustomInput/CustomInput.js";
-import Button from "/components/CustomButtons/Button.js";
+import Button from "/components/CustomButtons/Button.js"; 
 
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPageSections/workStyle.js";
 import { Input, TextField } from "@material-ui/core";
