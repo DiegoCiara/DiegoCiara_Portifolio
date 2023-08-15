@@ -30,9 +30,10 @@ export default function ContactPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
-    <div style={{height:"100%", display:"flex", flexDirection:"column", justifyContent:"space-around", alignItems:"center"}}>
+  
+    <Parallax filter responsive image="/img/landing-bg.jpg" style={{minHeight:"100vh", display:"flex", flexDirection:"column", justifyContent:"space-around", alignItems:"center"}}>
       <Header
-        // color="transparent"
+        color="transparent"
         routes={dashboardRoutes}
         brand="Diego Ciara"
         rightLinks={<HeaderLinks />}
@@ -44,15 +45,16 @@ export default function ContactPage(props) {
         }}
         {...rest}
       />          
+
       <div className={classNames(classes.main, classes.mainRaised, classes.topFirst)} >
         {/* <div className={classes.container}> */}
-          <WorkSection minHeight="80vh"  colorText="#3d3d3d"/>
+          <WorkSection minHeight="10vh" colorText="#3d3d3d"/>
 
           {/* <ProductSection />
           <TeamSection /> */}
         {/* </div> */}
       </div>
       <Footer />
-    </div>
+    </Parallax >
   );
 }
