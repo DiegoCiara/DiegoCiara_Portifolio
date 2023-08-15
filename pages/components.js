@@ -51,17 +51,17 @@ export default function LandingPage(props) {
               <img
                 src="https://media.licdn.com/dms/image/D4D03AQG5NznYSFUknw/profile-displayphoto-shrink_200_200/0/1692024640280?e=1697673600&v=beta&t=yCnomghWHEbSYqvvQ13RaYe_JuiIj11SHxnJ3W_I0FM"
                 alt="..."
-                style={{height:"200px", width:"200px", borderRadius:"20px"}}
+                style={{height:"100px", width:"100px", borderRadius:"20px"}}
               />
-              <br/>
+              <div/>
               <h1 className={classes.title}>Diego Ciara</h1><br/>
               <i>Front-end developer</i>
-              <h4>
+              <p>
                 Every landing page needs a small description after the big bold
                 title, that{"'"}s why we added this text here. Add here all the
                 information that can make you or your product create the first
                 impression
-              </h4>
+              </p>
               <br />
               
               <Button
