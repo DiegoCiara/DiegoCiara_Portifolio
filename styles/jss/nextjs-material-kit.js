@@ -85,12 +85,12 @@ const card = {
 };
 
 const defaultFont = {
-  fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+  fontFamily: "Montserrat",
   fontWeight: "300",
   lineHeight: "1.5em",
 };
 
-const primaryColor = "#9c27b0";
+const primaryColor = "#276cff";
 const warningColor = "#ff9800";
 const dangerColor = "#f44336";
 const successColor = "#4caf50";

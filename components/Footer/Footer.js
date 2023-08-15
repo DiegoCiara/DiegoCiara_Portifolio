@@ -33,32 +33,32 @@ export default function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/?ref=njsmk-footer"
+                href="/projects"
                 className={classes.block}
                 target="_blank"
               >
-                Creative Tim
+                Projetos
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/presentation?ref=njsmk-footer"
+                href="/about"
                 className={classes.block}
                 target="_blank"
               >
-                About us
+                Sobre
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="http://blog.creative-tim.com/?ref=njsmk-footer"
+                href="/contact"
                 className={classes.block}
                 target="_blank"
               >
-                Blog
+                Contato
               </a>
             </ListItem>
-            <ListItem className={classes.inlineBlock}>
+            {/* <ListItem className={classes.inlineBlock}>
               <a
                 href="https://www.creative-tim.com/license?ref=njsmk-footer"
                 className={classes.block}
@@ -66,20 +66,19 @@ export default function Footer(props) {
               >
                 Licenses
               </a>
-            </ListItem>
+            </ListItem> */}
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
+          &copy; {1900 + new Date().getYear()} {" "}
           <a
-            href="https://www.creative-tim.com?ref=njsmk-footer"
+            href="/"
             className={aClasses}
             target="_blank"
           >
-            Creative Tim
-          </a>{" "}
-          for a better web.
+            Diego Ciara
+          </a>{" "}|{" "}
+          Todos direitos reservados.
         </div>
       </div>
     </footer>

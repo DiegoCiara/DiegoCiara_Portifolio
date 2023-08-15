@@ -34,6 +34,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
+        title="Diego Ciara: Início"
         brand="Diego Ciara"
         rightLinks={<HeaderLinks />}
         fixed
@@ -55,7 +56,7 @@ export default function LandingPage(props) {
               />
               <div/>
               <h1 className={classes.title}>Diego Ciara</h1><br/>
-              <i>Front-end developer</i>
+              <h3 >Front-end developer</h3><br/>
               <p>
               Olá! Me chamo Diego, tenho 22 anos, sou programador front-end e acadêmico em Engenharia de Software com o maior amor e orgulho!<br/>
               Sinta-se a vontade para se conectar comigo ou trocar uma ideia!
@@ -73,8 +74,7 @@ export default function LandingPage(props) {
                 color="info"
                 size="lg"
                 style={{marginRight:"20px"}}
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
+                href="/contact"                
                 rel="noopener noreferrer"
               >
                 <i className="fas fa-whatsapp" />
@@ -83,7 +83,6 @@ export default function LandingPage(props) {
               <Button
                 size="lg"
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fas fa-whatsapp" />

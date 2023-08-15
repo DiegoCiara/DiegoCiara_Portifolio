@@ -89,6 +89,7 @@ export default function Header(props) {
             onClick={handleDrawerToggle}
           >
             <Menu />
+            <title>{props.title}</title>
           </IconButton>
         </Hidden>
       </Toolbar>
